@@ -1,0 +1,1279 @@
+{
+  "timestamp": "2026-10-20T19:57:21.649051",
+  "info": {
+    "domain_tools_version": "speech-identity-v1",
+    "voice_instruction_prompt_version": null,
+    "language": "en",
+    "pack_extension": null,
+    "localize_db": null,
+    "language_artifacts": {
+      "pack_sha256": "cd14ad9a7aaa298ce54c8c434f2cd1fb55500b13e6fdd1b824d92205a7e4f752",
+      "tasks_sha256": "d4062c1233905ccce61b91a51373df1a32e89e9af190ac94ce9ef56fc3d040c9",
+      "metadata_sha256": "8be91a4c0724c0f7c5f538b96431f8ce382119c4b015d596916de2e4ee831240",
+      "scenario_mode": "pack",
+      "scenario_sha256": null,
+      "localization_map_sha256": null,
+      "localization_revision": null,
+      "runtime_rules_version": null,
+      "runtime_rules_sha256": null
+    },
+    "language_tasks": {
+      "create_task_1": {
+        "language": "en",
+        "mode": "text",
+        "cross_lingual": false,
+        "pack_revision": "voice-v2-entity-order-v5-schema3-textneutral-voiceclauses",
+        "pack_sha256": "cd14ad9a7aaa298ce54c8c434f2cd1fb55500b13e6fdd1b824d92205a7e4f752",
+        "domain_revision": "registry-v1",
+        "tasks_sha256": "d4062c1233905ccce61b91a51373df1a32e89e9af190ac94ce9ef56fc3d040c9",
+        "metadata_sha256": "8be91a4c0724c0f7c5f538b96431f8ce382119c4b015d596916de2e4ee831240",
+        "scenario_mode": "pack",
+        "scenario_sha256": null,
+        "localization_map_sha256": null,
+        "localization_revision": null,
+        "runtime_rules_version": null,
+        "runtime_rules_sha256": null,
+        "task_selection": {
+          "task_set_name": null,
+          "task_split_name": "base",
+          "task_kwargs": {}
+        },
+        "task_sha256": "437f064b3d184ea1968ad15260ced07fe14a3fb887a0a4b9eea9093a1ee436fd",
+        "canonical_task_id": "create_task_1",
+        "agent_greeting": "Hi! How can I help you today?",
+        "agent_language_clause": "Respond in English using Latin script; keep all tool calls, arguments, and structured outputs in English exactly as specified.",
+        "speech_insert_events_per_minute": null,
+        "backchannel_level": null,
+        "backchannel_prompt_version": null,
+        "caller_gender": null,
+        "persona": {
+          "verbosity": "standard",
+          "interrupt_tendency": null,
+          "persona_id": "priya_patil",
+          "mode": "text",
+          "gender": "female",
+          "locale": "Maharashtra, India",
+          "variety": "English",
+          "language": "en",
+          "display_language": "English",
+          "gender_guidance": "You are a female customer (she/her).",
+          "pragmatics_clauses": [
+            "Short punchy sentences are natural to this variety. You often repeat what you already said to make sure it lands \u2014 'Like I said, the order's been wrong twice now'.",
+            "When you open and get right to it, natural forms are 'Yeah, hi, so here's the problem', 'Okay, I've been waiting forever, I need this fixed today'. In this register you can skip small talk and state the issue immediately.",
+            "When you're not getting somewhere fast, asking for a supervisor or a timeline early is characteristic.",
+            "When you decline or push back, natural realizations are direct \u2014 'No, that doesn't work for me', 'Nope, not doing that', 'That's not what I asked'. In this style the refusal is not softened.",
+            "When frustration builds, you become more insistent \u2014 'Okay, like I literally just told you'. Then a direct ask \u2014 'Can I just talk to someone who can actually fix this'. Even when annoyed your language stays coherent."
+          ],
+          "user_guidelines": "",
+          "mode_guidelines": "",
+          "agent_background_clause": "",
+          "language_directive": null,
+          "spellout_section": "",
+          "voice": null
+        },
+        "spelling_normalization_version": null,
+        "prompt_version": "language-runtime-v8",
+        "guideline_template_version": "language-guidelines-v4",
+        "assignment_version": "canonical-id-sha256-v1"
+      }
+    },
+    "communicate_scoring": {
+      "scorer": "semantic",
+      "judge": {
+        "model": "gpt-5.5",
+        "model_args": {
+          "reasoning_effort": "low"
+        },
+        "prompt_version": "communicate-semantic-v1"
+      }
+    },
+    "benchmark": null,
+    "git_commit": "989d3285ae669e49503324bdb9981bf14fccedeb",
+    "elicitation": null,
+    "elicitation_scoring_version": null,
+    "elicitation_prompt_version": null,
+    "elicitation_catalog_version": null,
+    "elicitation_spell_detection_version": null,
+    "num_trials": 1,
+    "max_steps": 200,
+    "max_errors": 10,
+    "user_info": {
+      "implementation": "user_simulator",
+      "llm": "ollama/qwen2.5:7b",
+      "llm_args": {
+        "temperature": 0.0
+      },
+      "global_simulation_guidelines": null,
+      "voice_settings": null,
+      "persona_config": null
+    },
+    "agent_info": {
+      "implementation": "llm_agent",
+      "llm": "ollama/qwen2.5:7b",
+      "llm_args": {
+        "temperature": 0.0
+      },
+      "voice_settings": null
+    },
+    "environment_info": {
+      "domain_name": "mock",
+      "policy": "# Mock Domain Policy\n\n1. Each task must have a title\n2. Task status can only be \"pending\" or \"completed\"\n3. Only existing users can create tasks \n4. You are not allowed to delete tasks. You should transfer the a human agent.\n5. If the user asks for a compliment, compliment them",
+      "tool_defs": null
+    },
+    "seed": 300,
+    "text_streaming_config": {
+      "chunk_by": "words",
+      "chunk_size": 1
+    },
+    "speech_complexity": null,
+    "channel_effects_mode": null,
+    "speech_effects_mode": null,
+    "pass3_condition": null,
+    "voice_sampling_seed": null,
+    "audio_native_config": null,
+    "retrieval_config": null,
+    "retrieval_config_kwargs": null
+  },
+  "tasks": [
+    {
+      "id": "create_task_1",
+      "description": {
+        "purpose": "Test the create_task functionality",
+        "relevant_policies": null,
+        "notes": "Basic task creation test with a simple title"
+      },
+      "user_scenario": {
+        "persona": "Professional and direct communicator who writes in a clear and concise style",
+        "instructions": "You are a team member who needs to create a task for an upcoming meeting. Your goal is to create a task to track this important meeting. Create a new task called 'Important Meeting' for user_1."
+      },
+      "ticket": "User needs to create a task for an upcoming meeting. Create a new task called 'Important Meeting' for user_1.",
+      "initial_state": null,
+      "evaluation_criteria": {
+        "actions": [
+          {
+            "action_id": "create_1",
+            "requestor": "assistant",
+            "name": "create_task",
+            "arguments": {
+              "user_id": "user_1",
+              "title": "Important Meeting"
+            },
+            "info": "Create a new task for the meeting",
+            "compare_args": null
+          }
+        ],
+        "env_assertions": null,
+        "communicate_info": null,
+        "nl_assertions": [
+          "The agent confirmed the task was created successfully"
+        ],
+        "reward_basis": [
+          "DB",
+          "COMMUNICATE"
+        ]
+      },
+      "issues": null,
+      "required_documents": null,
+      "user_tools": null,
+      "agent_opener": null
+    }
+  ],
+  "simulations": [
+    {
+      "language_context": {
+        "language": "en",
+        "mode": "text",
+        "cross_lingual": false,
+        "pack_revision": "voice-v2-entity-order-v5-schema3-textneutral-voiceclauses",
+        "pack_sha256": "cd14ad9a7aaa298ce54c8c434f2cd1fb55500b13e6fdd1b824d92205a7e4f752",
+        "domain_revision": "registry-v1",
+        "tasks_sha256": "d4062c1233905ccce61b91a51373df1a32e89e9af190ac94ce9ef56fc3d040c9",
+        "metadata_sha256": "8be91a4c0724c0f7c5f538b96431f8ce382119c4b015d596916de2e4ee831240",
+        "scenario_mode": "pack",
+        "scenario_sha256": null,
+        "localization_map_sha256": null,
+        "localization_revision": null,
+        "runtime_rules_version": null,
+        "runtime_rules_sha256": null,
+        "task_selection": {
+          "task_set_name": null,
+          "task_split_name": "base",
+          "task_kwargs": {}
+        },
+        "task_sha256": "437f064b3d184ea1968ad15260ced07fe14a3fb887a0a4b9eea9093a1ee436fd",
+        "canonical_task_id": "create_task_1",
+        "agent_greeting": "Hi! How can I help you today?",
+        "agent_language_clause": "Respond in English using Latin script; keep all tool calls, arguments, and structured outputs in English exactly as specified.",
+        "speech_insert_events_per_minute": null,
+        "backchannel_level": null,
+        "backchannel_prompt_version": null,
+        "caller_gender": null,
+        "persona": {
+          "verbosity": "standard",
+          "interrupt_tendency": null,
+          "persona_id": "priya_patil",
+          "mode": "text",
+          "gender": "female",
+          "locale": "Maharashtra, India",
+          "variety": "English",
+          "language": "en",
+          "display_language": "English",
+          "gender_guidance": "You are a female customer (she/her).",
+          "pragmatics_clauses": [
+            "Short punchy sentences are natural to this variety. You often repeat what you already said to make sure it lands \u2014 'Like I said, the order's been wrong twice now'.",
+            "When you open and get right to it, natural forms are 'Yeah, hi, so here's the problem', 'Okay, I've been waiting forever, I need this fixed today'. In this register you can skip small talk and state the issue immediately.",
+            "When you're not getting somewhere fast, asking for a supervisor or a timeline early is characteristic.",
+            "When you decline or push back, natural realizations are direct \u2014 'No, that doesn't work for me', 'Nope, not doing that', 'That's not what I asked'. In this style the refusal is not softened.",
+            "When frustration builds, you become more insistent \u2014 'Okay, like I literally just told you'. Then a direct ask \u2014 'Can I just talk to someone who can actually fix this'. Even when annoyed your language stays coherent."
+          ],
+          "user_guidelines": "",
+          "mode_guidelines": "",
+          "agent_background_clause": "",
+          "language_directive": null,
+          "spellout_section": "",
+          "voice": null
+        },
+        "spelling_normalization_version": null,
+        "prompt_version": "language-runtime-v8",
+        "guideline_template_version": "language-guidelines-v4",
+        "assignment_version": "canonical-id-sha256-v1"
+      },
+      "agent_voice": null,
+      "agent_voice_gender": null,
+      "agent_voice_catalog": null,
+      "id": "179da7a9-8829-4d69-a7f9-c453698656d6",
+      "complication": null,
+      "task_id": "create_task_1",
+      "timestamp": "2026-10-20T19:57:30.853023",
+      "start_time": "2026-10-20T19:57:21.727171",
+      "end_time": "2026-10-20T19:57:30.853023",
+      "duration": 9.124591100000544,
+      "termination_reason": "too_many_errors",
+      "agent_cost": null,
+      "user_cost": 0.0,
+      "agent_usage": null,
+      "reward_info": {
+        "reward": 0.0,
+        "db_check": null,
+        "env_assertions": null,
+        "action_checks": null,
+        "nl_assertions": null,
+        "communicate_checks": null,
+        "reward_basis": null,
+        "reward_breakdown": null,
+        "info": {
+          "note": "Simulation terminated prematurely. Termination reason: too_many_errors"
+        }
+      },
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Hi! How can I help you today?",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 0,
+          "timestamp": "2026-10-20T19:57:21.727171",
+          "cost": null,
+          "usage": null,
+          "raw_data": null,
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_5c9f6aaf-227d-4af7-a193-3658f84d4f8e",
+              "name": "check_notifications",
+              "arguments": {},
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 1,
+          "timestamp": "2026-10-20T19:57:25.596225",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 13,
+            "prompt_tokens": 1068
+          },
+          "raw_data": {
+            "id": "chatcmpl-e56ce08d-f9db-4033-a80a-828e637d972c",
+            "created": 1792522645,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{}",
+                        "name": "check_notifications"
+                      },
+                      "id": "call_5c9f6aaf-227d-4af7-a193-3658f84d4f8e",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 13,
+              "prompt_tokens": 1068,
+              "total_tokens": 1081,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_5c9f6aaf-227d-4af7-a193-3658f84d4f8e",
+          "role": "tool",
+          "content": "[{\"notification_id\": \"notif_1\", \"message\": \"Task 'Test task' has been assigned to you.\", \"status\": \"unread\", \"task_id\": \"task_1\"}]",
+          "requestor": "user",
+          "error": false,
+          "execution_status": "executed",
+          "turn_idx": 2,
+          "timestamp": "2026-10-20T19:57:25.596225"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_f75bd71c-4b72-4ade-8371-fa87a035ed74",
+              "name": "dismiss_notification",
+              "arguments": {
+                "notification_id": "notif_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 3,
+          "timestamp": "2026-10-20T19:57:25.981836",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 20,
+            "prompt_tokens": 1192
+          },
+          "raw_data": {
+            "id": "chatcmpl-5179eba7-831a-453d-b21c-be32f35805b1",
+            "created": 1792522645,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"notification_id\": \"notif_1\"}",
+                        "name": "dismiss_notification"
+                      },
+                      "id": "call_f75bd71c-4b72-4ade-8371-fa87a035ed74",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 20,
+              "prompt_tokens": 1192,
+              "total_tokens": 1212,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_f75bd71c-4b72-4ade-8371-fa87a035ed74",
+          "role": "tool",
+          "content": "Notification notif_1 dismissed",
+          "requestor": "user",
+          "error": false,
+          "execution_status": "executed",
+          "turn_idx": 4,
+          "timestamp": "2026-10-20T19:57:25.981836"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_931fc79a-3513-4944-899e-f9b0f2cf0342",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 5,
+          "timestamp": "2026-10-20T19:57:26.472700",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 28,
+            "prompt_tokens": 1291
+          },
+          "raw_data": {
+            "id": "chatcmpl-ee6e1768-fabd-4942-80b4-5ce3bc6903ff",
+            "created": 1792522646,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_931fc79a-3513-4944-899e-f9b0f2cf0342",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 28,
+              "prompt_tokens": 1291,
+              "total_tokens": 1319,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_931fc79a-3513-4944-899e-f9b0f2cf0342",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 6,
+          "timestamp": "2026-10-20T19:57:26.472700"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_f498e05e-5738-4fcd-ac76-56cc7092cde9",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 7,
+          "timestamp": "2026-10-20T19:57:26.942954",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 27,
+            "prompt_tokens": 1405
+          },
+          "raw_data": {
+            "id": "chatcmpl-5d0a45c5-0f37-4d1c-a061-eac7085f1078",
+            "created": 1792522646,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_f498e05e-5738-4fcd-ac76-56cc7092cde9",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 27,
+              "prompt_tokens": 1405,
+              "total_tokens": 1432,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_f498e05e-5738-4fcd-ac76-56cc7092cde9",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 8,
+          "timestamp": "2026-10-20T19:57:26.942954"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_85424dac-876b-41ef-8f09-7df61c6a591d",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 9,
+          "timestamp": "2026-10-20T19:57:27.418913",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 27,
+            "prompt_tokens": 1516
+          },
+          "raw_data": {
+            "id": "chatcmpl-9e8b7279-7ff2-4a37-9be9-81debb048fbe",
+            "created": 1792522647,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_85424dac-876b-41ef-8f09-7df61c6a591d",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 27,
+              "prompt_tokens": 1516,
+              "total_tokens": 1543,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_85424dac-876b-41ef-8f09-7df61c6a591d",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 10,
+          "timestamp": "2026-10-20T19:57:27.418913"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_75a301fc-7acb-4a27-ab4d-e19d75c4488b",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 11,
+          "timestamp": "2026-10-20T19:57:27.901751",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 27,
+            "prompt_tokens": 1629
+          },
+          "raw_data": {
+            "id": "chatcmpl-2ab3ed79-08ea-4df8-a07d-15db60bd2dc5",
+            "created": 1792522647,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_75a301fc-7acb-4a27-ab4d-e19d75c4488b",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 27,
+              "prompt_tokens": 1629,
+              "total_tokens": 1656,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_75a301fc-7acb-4a27-ab4d-e19d75c4488b",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 12,
+          "timestamp": "2026-10-20T19:57:27.901751"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_cb9fc462-3215-459d-8c9e-17d4159b90d8",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 13,
+          "timestamp": "2026-10-20T19:57:28.379563",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 27,
+            "prompt_tokens": 1740
+          },
+          "raw_data": {
+            "id": "chatcmpl-64efc1eb-d26d-4e07-95d4-ec0242e38a8f",
+            "created": 1792522648,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_cb9fc462-3215-459d-8c9e-17d4159b90d8",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 27,
+              "prompt_tokens": 1740,
+              "total_tokens": 1767,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_cb9fc462-3215-459d-8c9e-17d4159b90d8",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 14,
+          "timestamp": "2026-10-20T19:57:28.379563"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_e4d5a694-3e99-4dc5-9edc-0f174d97b76d",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 15,
+          "timestamp": "2026-10-20T19:57:28.877554",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 28,
+            "prompt_tokens": 1854
+          },
+          "raw_data": {
+            "id": "chatcmpl-91c59f4c-3744-42ee-83bc-38c46e8a8074",
+            "created": 1792522648,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_e4d5a694-3e99-4dc5-9edc-0f174d97b76d",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 28,
+              "prompt_tokens": 1854,
+              "total_tokens": 1882,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_e4d5a694-3e99-4dc5-9edc-0f174d97b76d",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 16,
+          "timestamp": "2026-10-20T19:57:28.877554"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_3fe28420-a674-43fc-987a-1f8be647cb69",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 17,
+          "timestamp": "2026-10-20T19:57:29.372598",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 28,
+            "prompt_tokens": 1968
+          },
+          "raw_data": {
+            "id": "chatcmpl-ddb41a03-b9b8-40a3-9923-c65fdb6fc4b1",
+            "created": 1792522649,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_3fe28420-a674-43fc-987a-1f8be647cb69",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 28,
+              "prompt_tokens": 1968,
+              "total_tokens": 1996,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_3fe28420-a674-43fc-987a-1f8be647cb69",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 18,
+          "timestamp": "2026-10-20T19:57:29.372598"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_49cfd8fc-96e5-42c2-bc15-989f639face4",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 19,
+          "timestamp": "2026-10-20T19:57:29.870724",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 28,
+            "prompt_tokens": 2080
+          },
+          "raw_data": {
+            "id": "chatcmpl-740d210b-ad22-4da3-acda-5ba7101b35f8",
+            "created": 1792522649,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_49cfd8fc-96e5-42c2-bc15-989f639face4",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 28,
+              "prompt_tokens": 2080,
+              "total_tokens": 2108,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_49cfd8fc-96e5-42c2-bc15-989f639face4",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 20,
+          "timestamp": "2026-10-20T19:57:29.870724"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_b7464e7d-7b82-4c79-a461-553cdaaee482",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 21,
+          "timestamp": "2026-10-20T19:57:30.364799",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 28,
+            "prompt_tokens": 2191
+          },
+          "raw_data": {
+            "id": "chatcmpl-97cd6fa6-5481-4989-81c2-c2c8bd264e0c",
+            "created": 1792522650,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_b7464e7d-7b82-4c79-a461-553cdaaee482",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 28,
+              "prompt_tokens": 2191,
+              "total_tokens": 2219,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_b7464e7d-7b82-4c79-a461-553cdaaee482",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 22,
+          "timestamp": "2026-10-20T19:57:30.364799"
+        },
+        {
+          "role": "user",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_5584887d-c17b-4037-9a78-3abf3f408daa",
+              "name": "create_task",
+              "arguments": {
+                "task_name": "Important Meeting",
+                "user_id": "user_1"
+              },
+              "requestor": "user"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 23,
+          "timestamp": "2026-10-20T19:57:30.852002",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 28,
+            "prompt_tokens": 2304
+          },
+          "raw_data": {
+            "id": "chatcmpl-6b343da5-c038-4deb-bf6b-8f6fc6c036d1",
+            "created": 1792522650,
+            "model": "ollama/qwen2.5:7b",
+            "object": "chat.completion",
+            "system_fingerprint": null,
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"task_name\": \"Important Meeting\", \"user_id\": \"user_1\"}",
+                        "name": "create_task"
+                      },
+                      "id": "call_5584887d-c17b-4037-9a78-3abf3f408daa",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 28,
+              "prompt_tokens": 2304,
+              "total_tokens": 2332,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": null
+            }
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "call_5584887d-c17b-4037-9a78-3abf3f408daa",
+          "role": "tool",
+          "content": "Error: Tool 'create_task' not found.",
+          "requestor": "user",
+          "error": true,
+          "execution_status": "executed",
+          "turn_idx": 24,
+          "timestamp": "2026-10-20T19:57:30.852002"
+        }
+      ],
+      "ticks": null,
+      "trial": 0,
+      "seed": 626729,
+      "mode": "half_duplex",
+      "speech_environment": null,
+      "review": null,
+      "user_only_review": null,
+      "info": null,
+      "auth_classification": null,
+      "hallucination_retries_used": 0,
+      "hallucination_check": null,
+      "provider_session_id": null,
+      "policy": "# Mock Domain Policy\n\n1. Each task must have a title\n2. Task status can only be \"pending\" or \"completed\"\n3. Only existing users can create tasks \n4. You are not allowed to delete tasks. You should transfer the a human agent.\n5. If the user asks for a compliment, compliment them",
+      "effect_timeline": null
+    }
+  ],
+  "simulation_index": null
+}
